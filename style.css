@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700&display=swap);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--seriy);
+}
+
+:root {
+  --whiteColor: #fefefe;
+  --seriy: #f6f8ff;
+  --blackColor: #2b3442;
+  --blue: #4b6a9b;
+  --grey: #697c9a;
+  --moviy: #0079ff;
+  --site-logo: #222731;
+  --button-hover: #60abff;
+  --shadow: rgba(70, 96, 187, 0.2);
+}
+
+.dark {
+  --blackColor: #ffffff;
+  --whiteColor: #1e2a47;
+  --seriy: #141d2f;
+  --site-logo: #ffffff;
+  --grey: #ffffff;
+  --shadow: rgba(30, 42, 71, 0.2);
+  --blue: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header {
+  display: flex;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 524px;
+  margin-top: 80px;
+}
+.header_logo {
+  color: var(--blackColor);
+  font-size: 26px;
+  font-weight: 700;
+}
+.header_button {
+  color: var(--blackColor);
+  text-align: right;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: -10px;
+  cursor: pointer;
+}
+.mode {
+  font-size: 20px;
+  color: var(--blackColor);
+}
+
+/* search */
+.search {
+  width: 730px;
+  background-color: var(--whiteColor);
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  padding: 19px;
+  border-radius: 10px;
+}
+
+.img {
+  color: var(--moviy);
+  font-size: 30px;
+  padding-right: 5px;
+}
+
+.search_inp {
+  width: 60%;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  border-color: inherit;
+  outline-color: none;
+  outline-style: none;
+  background-color: inherit;
+  margin-right: auto;
+}
+
+.xato {
+  color: #f74646;
+  font-family: "Space Mono", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.search_button {
+  border: 0;
+  cursor: pointer;
+  background-color: var(--moviy);
+  color: var(--whiteColor);
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.search_button:hover {
+  background-color: var(--button-hover);
+}
+
+.site_main {
+  width: 730px;
+  height: 419px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 24px;
+  border-radius: 15px;
+  background: var(--whiteColor);
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+
+.user_main {
+  padding: 48px;
+}
+.user_coment {
+  display: flex;
+}
+
+.img_user {
+  border-radius: 50%;
+  margin-right: 32px;
+}
+.user_joined_data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_name {
+  color: var(--blackColor);
+}
+.user_data {
+  margin-left: 90px;
+  color: var(--grey);
+}
+.user_link {
+  color: var(--moviy);
+}
+.user_bio {
+  padding-left: 140px;
+  color: var(--grey);
+  font-family: "Space Mono", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+  opacity: 0.75;
+}
+
+.user_ul {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--seriy);
+  margin-left: 150px;
+  padding-top: 15px;
+  padding-left: 32px;
+  padding-bottom: 17px;
+  padding-right: 83px;
+  justify-content: space-between;
+}
+.user_li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.user_repos {
+    color: var(--blackColor);
+    font-family: "Space Mono", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.location_ul {
+display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 150px;
+  margin-top: 37px;
+  column-gap: 62px;
+  row-gap: 20px;
+  list-style: none;
+
+}
+
+.location_a {
+    text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  color: var(--blue);
+  font-family: "Space Mono", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;  
+}
+.location_img {
+    width: 20px;
+  height: 20px;
+}
